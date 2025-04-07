@@ -19,7 +19,7 @@
         
         <div class="characters">
             <!-- Personaje 1 -->
-            <div class="character" onclick="playAudioAndRedirect('audio1', './secciones/Victor/outfit.html')">
+            <div class="character">
                 <a href="./secciones/Victor/outfit.html"><img src="./source/Victor.webp" alt="Personaje 1"></a>
                 <p>Victor</p>
             </div>
@@ -43,34 +43,11 @@
             </div>
         </div>
 
-        <audio id="audio1" autoplay src="./source/audio/Victor.mp3"></audio>
         <audio id="audio2" src="../audio/personaje2.mp3"></audio>
         <audio id="audio3" src="../audio/personaje3.mp3"></audio>
 
         <div id="selectionMessage" class="selection-message"></div>
     </div>
-
-    <script>
-        // Función para reproducir el audio y redirigir después de un retraso
-        function playAudioAndRedirect(audioId, redirectUrl) {
-            // Detenemos cualquier audio que esté sonando actualmente
-            var audios = document.querySelectorAll('audio');
-            audios.forEach(function(audio) {
-                audio.pause();
-                audio.currentTime = 0;
-            });
-
-            // Reproducimos el audio del personaje seleccionado
-            var audio = document.getElementById(audioId);
-            audio.play();
-
-            // Esperamos a que el audio termine y luego redirigimos
-            var audioDuration = audio.duration; // Duración del audio en segundos
-            setTimeout(function() {
-                window.location.href = redirectUrl; // Redirigimos después del delay
-            }, audioDuration * 5000); // Convertimos a milisegundos
-        }
-    </script>
 </body>
 </html>
 
