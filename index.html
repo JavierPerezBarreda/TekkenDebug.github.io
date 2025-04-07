@@ -19,8 +19,8 @@
         
         <div class="characters">
             <!-- Personaje 1 -->
-            <div class="character">
-                <a href="./secciones/Victor/outfit.html"><img src="./source/Victor.webp" alt="Personaje 1" onclick="playAudio('audio1')"></a>
+            <div class="character" onclick="playAudioAndRedirect('audio1', './secciones/Victor/outfit.html')">
+                <a href="./secciones/Victor/outfit.html"><img src="./source/Victor.webp" alt="Personaje 1"></a>
                 <p>Victor</p>
             </div>
 
@@ -51,8 +51,8 @@
     </div>
 
     <script>
-        // Función para reproducir el audio cuando se hace clic en un personaje
-        function playAudio(audioId) {
+        // Función para reproducir el audio y redirigir después de un retraso
+        function playAudioAndRedirect(audioId, redirectUrl) {
             // Detenemos cualquier audio que esté sonando actualmente
             var audios = document.querySelectorAll('audio');
             audios.forEach(function(audio) {
@@ -63,6 +63,12 @@
             // Reproducimos el audio del personaje seleccionado
             var audio = document.getElementById(audioId);
             audio.play();
+
+            // Esperamos a que el audio termine y luego redirigimos
+            var audioDuration = audio.duration; // Duración del audio en segundos
+            setTimeout(function() {
+                window.location.href = redirectUrl; // Redirigimos después del delay
+            }, audioDuration * 5000); // Convertimos a milisegundos
         }
     </script>
 </body>
