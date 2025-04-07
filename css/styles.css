@@ -31,6 +31,19 @@ h1 {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
+    opacity: 0; /* Empieza oculto */
+    animation: fadeIn 2s forwards; /* Animación para hacer aparecer los personajes */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 /* Estilo de cada personaje */
@@ -39,6 +52,8 @@ h1 {
     text-align: center;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: scaleUp 1s ease-out forwards; /* Animación individual para cada personaje */
+    opacity: 0; /* Inicialmente invisible */
 }
 
 .character img {
@@ -59,6 +74,17 @@ h1 {
     font-size: 20px;
     color: #333;
     display: none;
+}
+
+@keyframes scaleUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 

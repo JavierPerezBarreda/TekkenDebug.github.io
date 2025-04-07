@@ -19,6 +19,20 @@ function checkAnswer(isCorrect, gifUrl) {
     }
 }
 
+  // Función para reproducir el audio cuando se hace clic en un personaje
+  function playAudio(audioId) {
+    // Detenemos cualquier audio que esté sonando actualmente
+    var audios = document.querySelectorAll('audio');
+    audios.forEach(function(audio) {
+        audio.pause();
+        audio.currentTime = 0;
+    });
+
+    // Reproducimos el audio del personaje seleccionado
+    var audio = document.getElementById(audioId);
+    audio.play();
+}
+
 
 
 
