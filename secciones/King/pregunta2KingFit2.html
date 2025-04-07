@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Código 1</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+    <div class="sticky-index">
+        <ul>
+            <li><a href="../../index.html">Personajes</a></li>
+            <li><a href="../../secciones/King/outfit.html">Atuendos</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="quiz-container">
+        <div class="quiz-header">¿Cuál es el error en el siguiente código?</div>
+
+        <!-- Contenedor del GIF -->
+        <div class="gif-container">
+            <img id="gifImage" src="../../source/GIFs/Victor2.gif" alt="Error GIF" class="error-gif">
+        </div>
+        
+        <!-- Código con error -->
+        <div class="code-snippet" id="code-snippet">
+            
+        </div>
+
+        <!-- Opciones del quiz -->
+        <ul class="options">
+            <li><button class="button" onclick="checkAnswer(false, '../GIFs/Success.gif')">function saludo() { console.log('Hola, Mundo!'); }</button></li>
+            <!--3-->
+            <li><button class="button" onclick="checkAnswer(true, '../GIFs/ErrorAgain.gif')">function saludo( console.log('Hola, Mundo!'); }</button></li>
+            <!--4,2-->
+            <li><button class="button" onclick="checkAnswer(false, '../GIFs/ErrorAgain.gif')">function saludo { console.log('Hola Mundo!'); }</button></li>
+            <!--1+2-->
+        </ul>
+
+         <!-- Botón para ir a la siguiente pregunta -->
+         <div id="nextQuestionContainer" style="display: none;">
+            <a href="./pregunta3KingFit2.html"><button class="next-button">Siguiente Pregunta</button></a>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="../../java/script.js"></script>
+</body>
+</html>
