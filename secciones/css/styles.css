@@ -151,3 +151,101 @@ ul.options li {
     color: white;
 }
 
+/* Estilos para el botón de siguiente pregunta */
+.next-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.next-button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para el índice fijo en la parte superior */
+.sticky-index {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000; /* Asegura que el índice esté por encima de otros elementos */
+}
+
+.sticky-index ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.sticky-index ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.sticky-index ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.sticky-index ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Estilos generales para el contenido */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.quiz-container {
+    padding-top: 80px; /* Deja espacio para el índice fijo */
+    padding: 40px;
+    text-align: center;
+}
+
+.quiz-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.error-gif {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/* Botón de siguiente pregunta */
+.next-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.next-button:hover {
+    background-color: #45a049;
+}
