@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz de Código 1</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../Victor/styles.css">
 </head>
 <body>
     <div class="quiz-container">
         <div class="quiz-header">¿Cuál es el error en el siguiente código?</div>
 
         <div class="gif-container">
-            <img src="https://media.giphy.com/media/xT0BKlplZY10WZ7U7y/giphy.gif" alt="Error GIF" class="error-gif">
+            <img src="../GIFs/Victor.gif" alt="Error GIF" class="error-gif">
         </div>
         
         <div class="code-snippet" id="code-snippet">
@@ -19,9 +19,9 @@
         </div>
 
         <ul class="options">
-            <li><button class="button" onclick="checkAnswer1(true)">function saludo() { console.log('Hola, Mundo!'); }</button></li>
-            <li><button class="button" onclick="checkAnswer1(false)">function saludo( console.log('Hola, Mundo!'); }</button></li>
-            <li><button class="button" onclick="checkAnswer1(false)">function saludo { console.log('Hola Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(true, '../GIFs/Success.gif')">function saludo() { console.log('Hola, Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../GIFs/ErrorAgain.gif')">function saludo( console.log('Hola, Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../GIFs/ErrorAgain.gif')">function saludo { console.log('Hola Mundo!'); }</button></li>
         </ul>
 
         <div id="result" class="result"></div>
