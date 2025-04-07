@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Código</title>
+    <link rel="stylesheet" href="./css/styles.css"> <!-- Enlace al archivo de estilo CSS -->
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">¿Cuál es el error en el siguiente código?</div>
+        
+        <!-- Código erróneo -->
+        <div class="code-snippet" id="code-snippet">
+            <p>Hola, Mundo<p>
+        </div>
+
+        <ul class="options">
+            <li><button class="button" onclick="checkAnswer(true)">Falta el punto y coma al final</button></li>
+            <li><button class="button" onclick="checkAnswer(false)">Está mal el uso de comillas</button></li>
+            <li><button class="button" onclick="checkAnswer(false)">El método 'console.log' no existe</button></li>
+        </ul>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="./java/script.js"></script> <!-- Enlace al archivo de JavaScript -->
+</body>
+</html>
