@@ -21,9 +21,11 @@
 
         <!-- Contenedor del GIF -->
         <div class="gif-container">
-            <img id="gifImage" src="../../source/GIFs/Victor2.gif" alt="Error GIF" class="error-gif">
+            <video id="videoPlayer" class="error-gif" width="320" height="240" autoplay muted>
+                <source src="../../source/video/Victor/Default.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
         </div>
-        
         <!-- Código con error -->
         <div class="code-snippet" id="code-snippet">
             
@@ -31,11 +33,11 @@
 
         <!-- Opciones del quiz -->
         <ul class="options">
-            <li><button class="button" onclick="checkAnswer(false, '../GIFs/Success.gif')">function saludo() { console.log('Hola, Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo2/df3+4.mp4')">function saludo() { console.log('Hola, Mundo!'); }</button></li>
             <!--df3+4-->
-            <li><button class="button" onclick="checkAnswer(true, '../GIFs/ErrorAgain.gif')">function saludo( console.log('Hola, Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(true, '../../source/video/Victor/Atuendo2/BuenCombo.mp4')">function saludo( console.log('Hola, Mundo!'); }</button></li>
             <!--Rage Art-->
-            <li><button class="button" onclick="checkAnswer(false, '../GIFs/ErrorAgain.gif')">function saludo { console.log('Hola Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo2/1+2 pt2.mp4')">function saludo { console.log('Hola Mundo!'); }</button></li>
             <!--1+2-->
         </ul>
 

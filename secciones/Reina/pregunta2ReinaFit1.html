@@ -21,7 +21,10 @@
 
         <!-- Contenedor del GIF -->
         <div class="gif-container">
-            <img id="gifImage" src="../../source/GIFs/Victor2.gif" alt="Error GIF" class="error-gif">
+            <video id="videoPlayer" class="error-gif" width="320" height="240" autoplay muted>
+                <source src="../../source/video/Victor/Default.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
         </div>
         
         <!-- Código con error -->
@@ -31,11 +34,11 @@
 
         <!-- Opciones del quiz -->
         <ul class="options">
-            <li><button class="button" onclick="checkAnswer(false, '../GIFs/Success.gif')">function saludo() { console.log('Hola, Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo1/cd df3.mp4')">function saludo() { console.log('Hola, Mundo!'); }</button></li>
             <!--df2, CD df3-->
             <li><button class="button" onclick="checkAnswer(true, '../GIFs/ErrorAgain.gif')">function saludo( console.log('Hola, Mundo!'); }</button></li>
-            <!--df2, df1,1-->
-            <li><button class="button" onclick="checkAnswer(false, '../GIFs/ErrorAgain.gif')">function saludo { console.log('Hola Mundo!'); }</button></li>
+            <!--df1,1-->
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo1/ff4.mp4')">function saludo { console.log('Hola Mundo!'); }</button></li>
             <!--df2, ff4-->
         </ul>
 
