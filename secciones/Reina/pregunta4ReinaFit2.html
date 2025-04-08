@@ -17,7 +17,7 @@
     </div>
 
     <div class="quiz-container">
-        <div class="quiz-header">¿Cuál es el error en el siguiente código?</div>
+        <div class="quiz-header">Indica el código correcto</div>
 
         <!-- Contenedor del GIF -->
         <div class="gif-container">
@@ -29,22 +29,23 @@
         
         <!-- Código con error -->
         <div class="code-snippet" id="code-snippet">
-            
+            &lt;xsl:template-match="/productos"&gt;
         </div>
 
         <!-- Opciones del quiz -->
         <ul class="options">
-            <li><button class="button" onclick="checkAnswer(true, '../../source/video/Reina/Atuendo2/ComboBueno.mp4')">function saludo() { console.log('Hola, Mundo!'); }</button></li>
-            <!--df ss? into RA-->
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/2+4.mp4')">function saludo( console.log('Hola, Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(true, '../../source/video/Reina/Atuendo2/ComboBueno.mp4')">&lt;xsl:template match="/productos"&gt;</button></li>
+            <!--cd into RA-->
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/2+4.mp4')">&lt;xsl:template.match="/productos"&gt;</button></li>
             <!--2+4-->
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/1+2.mp4')">function saludo { console.log('Hola Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/1+2.mp4')">&lt;xsl:template_match="/productos"&gt;</button></li>
             <!--1+2-->
         </ul>
 
+
          <!-- Botón para ir a la siguiente pregunta -->
          <div id="nextQuestionContainer" style="display: none;">
-            <a href="./FinalReina.html"><button class="next-button">Siguiente Pregunta</button></a>
+            <a href="./FinalReinaFit2.html"><button class="next-button">Final</button></a>
         </div>
 
         <div id="result" class="result"></div>

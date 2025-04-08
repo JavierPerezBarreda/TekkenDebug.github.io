@@ -4,7 +4,7 @@ function checkAnswer(isCorrect, videoUrl) {
     if (videoUrl) {
         videoPlayer.querySelector("source").src = videoUrl;
         videoPlayer.load();  // Recarga el video con la nueva fuente
-        videoPlayer.play();  // Reproduce automáticamente
+        videoPlayer.play();  // Reproduce automáticament
     }
 
     const resultElement = document.getElementById("result");
@@ -16,8 +16,8 @@ function checkAnswer(isCorrect, videoUrl) {
         nextQuestionContainer.style.display = "block";
     } else {
         resultElement.innerHTML = "¡Incorrecto! Intenta nuevamente.";
-        resultElement.className = "result incorrect";
-        nextQuestionContainer.style.display = "none";
+        resultElement.className = "result incorrect";  // Cambia el estilo a incorrecto
+        nextQuestionContainer.style.display = "none";  // Oculta el botón de siguiente pregunta si la respuesta es incorrecta
     }
 }
 
@@ -34,6 +34,7 @@ function checkAnswer(isCorrect, videoUrl) {
     var audio = document.getElementById(audioId);
     audio.play();
 }
+
 
 
 

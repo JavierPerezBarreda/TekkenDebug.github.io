@@ -17,7 +17,7 @@
     </div>
 
     <div class="quiz-container">
-        <div class="quiz-header">¿Cuál es el error en el siguiente código?</div>
+        <div class="quiz-header">Indica el código correcto</div>
 
         <!-- Contenedor del GIF -->
         <div class="gif-container">
@@ -29,16 +29,23 @@
         
         <!-- Código con error -->
         <div class="code-snippet" id="code-snippet">
-            
+            public class Main {
+                public static void main(String[] args) {
+                    int x = 5;
+                    if (x = 10) {
+                        System.out.println("X es 10");
+                    }
+                }
+            }
         </div>
 
         <!-- Opciones del quiz -->
         <ul class="options">
-            <li><button class="button" onclick="checkAnswer(true, '')">function saludo() { console.log('Hola, Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(true, '')">if (x == 10)</button></li>
             <!--2-->
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo1/lei 1+2 pt2.mp4')">function saludo( console.log('Hola, Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo1/lei 1+2 pt2.mp4')">public class main</button></li>
             <!--1+2-->
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo1/d1.mp4')">function saludo { console.log('Hola Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo1/d1.mp4')">public static void main(String{} args)</button></li>
             <!--d1-->
         </ul>
 

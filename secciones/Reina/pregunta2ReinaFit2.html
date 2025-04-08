@@ -17,7 +17,7 @@
     </div>
 
     <div class="quiz-container">
-        <div class="quiz-header">¿Cuál es el error en el siguiente código?</div>
+        <div class="quiz-header">Indica el código correcto</div>
 
         <!-- Contenedor del GIF -->
         <div class="gif-container">
@@ -29,16 +29,18 @@
         
         <!-- Código con error -->
         <div class="code-snippet" id="code-snippet">
-            
+            let $productos = doc("productos.xml")/productos/producto
+            where $productos/precio > 100
         </div>
 
         <!-- Opciones del quiz -->
         <ul class="options">
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/cd df3.mp4')">function saludo() { console.log('Hola, Mundo!'); }</button></li>
+
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/cd df3.mp4')">let $productos =: doc("productos.xml")/productos/producto</button></li>
             <!--df2, CD df3-->
-            <li><button class="button" onclick="checkAnswer(true, '../GIFs/ErrorAgain.gif')">function saludo( console.log('Hola, Mundo!'); }</button></li>
-            <!--df2, df1,1-->
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/ff4.mp4')">function saludo { console.log('Hola Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(true, '../GIFs/ErrorAgain.gif')">let $productos := doc("productos.xml")/productos/producto</button></li>
+            <!--df1,1-->
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/ff4.mp4')">let $productos ;= doc("productos.xml")/productos/producto</button></li>
             <!--df2, ff4-->
         </ul>
 

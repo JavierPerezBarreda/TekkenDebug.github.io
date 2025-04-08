@@ -121,12 +121,13 @@ h1 {
 /* Estilos para el bloque de código */
 .code-snippet {
     font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
     background-color: #282c34;
     color: #fff;
-    padding: 15px;
+    padding: 5px;
     border-radius: 8px;
     white-space: pre-wrap; /* Asegura que el código se ajuste si es largo */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Estilos para las opciones de respuesta */
@@ -274,4 +275,11 @@ body {
 
 .next-button:hover {
     background-color: #45a049;
+}
+
+.big-video {
+    width: 90vw;      /* 90% del ancho de la pantalla */
+    height: 80vh;     /* 80% del alto de la pantalla */
+    border-radius: 10px;
+    object-fit: cover; /* Recorta el video si es necesario pero llena el espacio */
 }

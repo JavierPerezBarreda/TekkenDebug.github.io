@@ -16,7 +16,7 @@
     </div>
 
     <div class="quiz-container">
-        <div class="quiz-header">¿Cuál es el error en el siguiente código?</div>
+        <div class="quiz-header">Indica el código correcto</div>
 
         <!-- Contenedor del GIF -->
         <div class="gif-container">
@@ -29,19 +29,23 @@
         
         <!-- Código con error -->
         <div class="code-snippet" id="code-snippet">
-            <pre>
-                p {color: blue}
-            </pre>
+            .boton {
+                background-color: #3498db;
+                color: white;
+                padding: 15px 30px;
+                border-radio: 5px;
+            }
         </div>
-
         <!-- Opciones del quiz -->
         <ul class="options">
-            <li><button class="button" onclick="checkAnswer(true, '../GIFs/Success.gif')">p {color: blue;}</button></li>
-            <!--CD df2, CD df2-->
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/f1+2.mp4')">p color: blue;</button></li>
+
+            <li><button class="button" onclick="checkAnswer(true, '../GIFs/Success.gif')">border-radius: 5px;</button></li>
+            <!--CD df2, df2-->
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/f1+2.mp4')">border-radius; 5px;</button></li>
             <!--CD df2, f1+2-->
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/cd df1.mp4')">p (color: blue)</button></li>
-            <!--CD df2, CD df3-->
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/cd df1.mp4')">border-radius: 5px</button></li>
+            <!--CD df2, CD df1-->
+
         </ul>
 
          <!-- Botón para ir a la siguiente pregunta -->

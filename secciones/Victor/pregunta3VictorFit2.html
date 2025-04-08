@@ -17,7 +17,7 @@
     </div>
 
     <div class="quiz-container">
-        <div class="quiz-header">¿Cuál es el error en el siguiente código?</div>
+        <div class="quiz-header">Indica el código correcto</div>
 
         <!-- Contenedor del GIF -->
         <div class="gif-container">
@@ -29,16 +29,16 @@
         
         <!-- Código con error -->
         <div class="code-snippet" id="code-snippet">
-            
+            for $x in doc("productos.xml")//producto were $x/price > 20 return $x/nam
         </div>
 
         <!-- Opciones del quiz -->
         <ul class="options">
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo2/1+2.mp4')">function saludo() { console.log('Hola, Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo2/1+2.mp4')">for $x i doc("productos.xml")//producto were $x/price > 20 return $x/nam</button></li>
             <!--1+2-->
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo2/432.mp4')">function saludo( console.log('Hola, Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo2/432.mp4')">for $x in doc("productos.xm")//producto where $x/price > 20 return $x/nam</button></li>
             <!--4,3,2-->
-            <li><button class="button" onclick="checkAnswer(true, '../GIFs/ErrorAgain.gif')">function saludo { console.log('Hola Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(true, '../GIFs/ErrorAgain.gif')">for $x in doc("productos.xml")//producto where $x/price > 20 return $x/nam</button></li>
             <!--db1,1 2,2 *-->
         </ul>
 

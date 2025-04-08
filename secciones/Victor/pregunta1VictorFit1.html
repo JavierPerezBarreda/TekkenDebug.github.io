@@ -16,7 +16,7 @@
     </div>
 
     <div class="quiz-container">
-        <div class="quiz-header">¿Cuál es el error en el siguiente código?</div>
+        <div class="quiz-header">Indica el código correcto</div>
 
         <!-- Contenedor del Video -->
         <div class="gif-container">
@@ -25,8 +25,6 @@
                 Tu navegador no soporta el video.
             </video>
         </div>
-        
-
         
         <!-- Código con error -->
         <div class="code-snippet" id="code-snippet">
@@ -37,7 +35,7 @@
 
         <!-- Opciones del quiz -->
         <ul class="options">
-            <li><button class="button" onclick="checkAnswer(true)">p {color: blue;}</button></li>
+            <li><button class="button" onclick="checkAnswer(true, '../../source/GIFs/cat-thumbs-up.gif')">p {color: blue;}</button></li>
             <!--df2, df4,2-->
             <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo1/db3.mp4')">p color: blue;</button></li>
             <!--df2, db3?-->

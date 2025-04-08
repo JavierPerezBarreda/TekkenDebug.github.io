@@ -17,7 +17,7 @@
     </div>
 
     <div class="quiz-container">
-        <div class="quiz-header">¿Cuál es el error en el siguiente código?</div>
+        <div class="quiz-header">Indica el código correcto</div>
 
         <!-- Contenedor del GIF -->
         <div class="gif-container">
@@ -29,22 +29,30 @@
         
         <!-- Código con error -->
         <div class="code-snippet" id="code-snippet">
-            
+            &lt;xsl:template match="producto"&gt;
+            &lt;producto&gt;
+                &lt;nombre&gt;&lt;xsl:value-of select="name" /&gt;&lt;/nombre&gt;
+                &lt;precio&gt;&lt;xsl:value-of select="precio" /&gt;&lt;/precio&gt;
+            &lt;/producto&gt;
+        &lt;/xsl:template&gt;
         </div>
 
         <!-- Opciones del quiz -->
         <ul class="options">
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo1/df2+4.mp4')">function saludo() { console.log('Hola, Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo1/df2+4.mp4')">&lt;nombre&gt;&lt;xsl:value of select="name" /&gt;&lt;/nombre&gt;
+            </button></li>
             <!--df3+4-->
-            <li><button class="button" onclick="checkAnswer(true, '../../source/video/Victor/Atuendo1/ComboBueno.mp4')">function saludo( console.log('Hola, Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(true, '../../source/video/Victor/Atuendo1/ComboBueno.mp4')">&lt;nombre&gt;&lt;xsl:value-of select="nombre" /&gt;&lt;/nombre&gt;
+            </button></li>
             <!--Rage Art-->
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo1/1+2 pt2.mp4')">function saludo { console.log('Hola Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo1/1+2 pt2.mp4')">&lt;nombre&gt;&lt;xsl;value-of select="nombre" /&gt;&lt;/nombre&gt;
+            </button></li>
             <!--1+2-->
         </ul>
 
          <!-- Botón para ir a la siguiente pregunta -->
          <div id="nextQuestionContainer" style="display: none;">
-            <a href="./FinalVictor.html"><button class="next-button">Siguiente Pregunta</button></a>
+            <a href="./FinalVictorFit1.html"><button class="next-button">Final</button></a>
         </div>
 
         <div id="result" class="result"></div>

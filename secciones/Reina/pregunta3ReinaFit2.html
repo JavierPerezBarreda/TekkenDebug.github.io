@@ -17,8 +17,7 @@
     </div>
 
     <div class="quiz-container">
-        <div class="quiz-header">¿Cuál es el error en el siguiente código?</div>
-
+        <div class="quiz-header">Indica el código correcto</div>
         <!-- Contenedor del GIF -->
         <div class="gif-container">
             <video id="videoPlayer" class="error-gif" width="320" height="240" autoplay muted>
@@ -28,16 +27,16 @@
         </div>
         <!-- Código con error -->
         <div class="code-snippet" id="code-snippet">
-            
+            //producto/precio > 100
         </div>
 
         <!-- Opciones del quiz -->
         <ul class="options">
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/b1+2.mp4')">function saludo() { console.log('Hola, Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/b1+2.mp4')">//producto/(precio > 100)</button></li>
             <!--b1+2-->
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/uf3+4.mp4')">function saludo( console.log('Hola, Mundo!'); }</button></li>
-            <!--1+2-->
-            <li><button class="button" onclick="checkAnswer(true, '../GIFs/ErrorAgain.gif')">function saludo { console.log('Hola Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Reina/Atuendo2/uf3+4.mp4')">//producto/{precio > 100}</button></li>
+            <!--uf3+4-->
+            <li><button class="button" onclick="checkAnswer(true, '../GIFs/ErrorAgain.gif')">//producto/[precio > 100]</button></li>
             <!--f2,3 f, 1+2-->
         </ul>
 

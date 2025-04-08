@@ -17,7 +17,7 @@
     </div>
 
     <div class="quiz-container">
-        <div class="quiz-header">¿Cuál es el error en el siguiente código?</div>
+        <div class="quiz-header">Indica el código correcto</div>
 
         <div class="gif-container">
             <video id="videoPlayer" class="error-gif" width="320" height="240" autoplay muted>
@@ -28,16 +28,18 @@
         
         <!-- Código con error -->
         <div class="code-snippet" id="code-snippet">
-            
+            <pre><code>
+                &lt;a href="https://www.ejemplo.com" target="blank"&gt;Visitar página&lt;/a&gt;
+                    </code></pre>
         </div>
 
         <!-- Opciones del quiz -->
         <ul class="options">
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo1/d2.mp4')">function saludo() { console.log('Hola, Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo1/d2.mp4')"> &lt;a href="https://www.ejemplo.com" target="blank"&gt;Visitar página</button></li>
             <!--3-->
-            <li><button class="button" onclick="checkAnswer(true, '../GIFs/ErrorAgain.gif')">function saludo( console.log('Hola, Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(true, '../GIFs/ErrorAgain.gif')"> &lt;a href="https://www.ejemplo.com" target="_blank"&gt;Visitar página&lt;/a&gt;</button></li>
             <!--4,2-->
-            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo1/lei 1+2.mp4')">function saludo { console.log('Hola Mundo!'); }</button></li>
+            <li><button class="button" onclick="checkAnswer(false, '../../source/video/Victor/Atuendo1/lei 1+2.mp4')"> &lt;a href="https://www.ejemplo.com target="blank"&gt;Visitar página&lt;/a&gt;</button></li>
             <!--1+2-->
         </ul>
 
